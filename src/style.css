@@ -1,17 +1,24 @@
 body {
   background: black;
-  color: #00ff00;
+  color: #33ff33;
   font-family: monospace;
-}
-
-#terminal {
   padding: 20px;
 }
 
-#input {
-  background: black;
-  color: #00ff00;
+.line {
+  display: flex;
+}
+
+.prompt {
+  margin-right: 6px;
+}
+
+input {
+  background: transparent;
   border: none;
   outline: none;
-  width: 100%;
+  color: inherit;
+  font: inherit;
+  flex: 1;
+  caret-color: #33ff33;
 }
