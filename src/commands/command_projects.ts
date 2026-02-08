@@ -134,7 +134,7 @@ export function renderProjects() {
         const link = document.createElement("a");
         link.className = "project-link";
         link.href = p.link;
-        link.textContent = "Video →";
+        link.textContent = "Link →";
         link.target = "_blank";
 
         card.appendChild(link);
