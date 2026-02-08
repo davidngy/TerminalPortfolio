@@ -1,6 +1,8 @@
-import { createPromptLine } from "./createInputLine";
+import { createPromptLine, printBanner, printWelcome } from "./createInputLine";
 
 function init() {
+  printBanner();
+  printWelcome();
   createPromptLine();
 }
 

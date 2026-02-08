@@ -1,24 +1,129 @@
-body {
-  background: black;
-  color: #33ff33;
-  font-family: monospace;
-  padding: 20px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  background: #1b1d1f; /* warm dark charcoal */
+  color: #f3f4f6;
+
+  font-family: "JetBrains Mono", monospace;
+
+  padding: 40px 60px;
+  min-height: 100vh;
+}
+
+/* Terminal space */
+
+#terminal {
+  max-width: 1000px;
+
+  white-space: pre;
+  line-height: 1.8;
+}
+
+.welcome-title {
+  color: #bbf7d0;
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.welcome-sub {
+  color: #d1fae5;
+  margin-top: 6px;
+}
+
+.welcome-hint {
+  color: #86efac;
+  margin-top: 18px;
+}
+
+/* Input line */
 
 .line {
   display: flex;
+  align-items: center;
 }
 
+/* Prompt — soft green */
+
 .prompt {
-  margin-right: 6px;
+  color: #86efac; /* mint green */
+  margin-right: 8px;
 }
+
+/* Input */
 
 input {
   background: transparent;
   border: none;
   outline: none;
-  color: inherit;
+
+  color: #ffffff;
   font: inherit;
   flex: 1;
-  caret-color: #33ff33;
+}
+
+/* Cursor — warm lime accent */
+
+.cursor {
+  width: 10px;
+  height: 18px;
+  margin-left: 4px;
+
+  border-radius: 2px;
+
+  background: #4ade80; /* fresh green */
+
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Output */
+
+#terminal div {
+  color: #e5e7eb;
+}
+
+/* Banner accent */
+
+.banner {
+  color: #bbf7d0; /* pale green highlight */
+}
+
+.project-card {
+  margin: 20px 0;
+  padding: 18px;
+
+  border: 1px solid #2a2f33;
+  border-radius: 8px;
+
+  background: #16181b;
+
+  /* wichtig ↓ */
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.project-title {
+  color: #86efac;
+  font-weight: 500;
+}
+
+.project-tech {
+  color: #9ca3af;
+  margin-top: 6px;
+}
+
+.project-link {
+  color: #a7f3d0;
+  margin-top: 6px;
+  display: block;
 }
