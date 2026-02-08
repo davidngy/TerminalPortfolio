@@ -26,4 +26,4 @@ Vite
 
 Hier zu meinem Portfolio:
 
-https://vercel.com/davidngys-projects/terminal-portfolio/EN7UFxk42utaLYG9kVdkcarV5qr6
+[https://vercel.com/davidngys-projects/terminal-portfolio/EN7UFxk42utaLYG9kVdkcarV5qr6](https://terminal-portfolio-eight-eta.vercel.app/)
