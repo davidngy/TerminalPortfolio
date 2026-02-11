@@ -117,6 +117,11 @@ input {
   font-weight: 500;
 }
 
+.project-tagline {
+  color: #86efac;
+  font-weight: 300;
+}
+
 .project-tech {
   color: #9ca3af;
   margin-top: 6px;

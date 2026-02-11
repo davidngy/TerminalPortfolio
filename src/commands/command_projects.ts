@@ -95,6 +95,26 @@ const projects: Project[] = [
     github: "https://github.com/davidngy/Kaffeeklatsch",
     status: "finished"
     },
+    {
+    name: "Chirpy",
+    tagline: "Chirpy ist ein Twitter Klon",
+
+    description: `
+    Chirpy ist ein Projekt aus einem Boot.dev Kurs, bei dem ich einen Twitter ähnlichen Server von Grund auf baue. 
+    Ziel ist es, wirklich zu verstehen, wie Webserver funktionieren und was hinter echten Webanwendungen steckt. 
+    Ich arbeite bewusst ohne großes Framework, um die Grundlagen sauber zu lernen und ein besseres Gefühl für 
+    TypeScript im Backend zu bekommen.
+    `,
+
+    tech: [
+      "Node.js",
+      "TypeScript",
+      "Express"
+    ],
+
+    github: "https://github.com/davidngy/Chirpy",
+    status: "ongoing"
+    },
 ];
 
 
@@ -106,6 +126,10 @@ export function renderProjects() {
     const title = document.createElement("h4");
     title.className = "project-title";
     title.textContent = p.name;
+
+    const tagline = document.createElement("h5");
+    tagline.className = "project-tagline";
+    tagline.textContent = p.tagline;
 
     const desc = document.createElement("div");
     desc.textContent = p.description;
@@ -126,6 +150,7 @@ export function renderProjects() {
 
     
     card.appendChild(title);
+    card.appendChild(tagline);
     card.appendChild(desc);
     card.appendChild(tech);
     card.appendChild(link);
